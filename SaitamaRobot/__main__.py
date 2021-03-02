@@ -74,8 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+[Click Here](t.me/HotbitTrading/325304) to get all Hotbit Group and Channel list
 You can find my list of available commands with /help.
 """
 
@@ -221,32 +220,30 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username
-                                ),
+                                text="🔔Hotbit Announcement",
+                                url="https://t.me/Hotbit_announcements",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="English Group",
+                                url=f"https://t.me/Hotbit_English",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                text="Trading Group",
+                                url="https://t.me/HotbitTrading",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="Official Site",
+                                url="https://hotbit.io/register?ref=630537",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                text="Official Twitter",
+                                url="http://twitter.com/Hotbit_news",
                             )
                         ],
                     ]
